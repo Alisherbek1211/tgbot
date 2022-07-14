@@ -75,6 +75,7 @@ def main() -> None:
 
     # on non command i.e message - echo the message on Telegram
     dispatcher.add_handler(MessageHandler(Filters.text("🚖Buyurtma"),buyurtma))
+    dispatcher.add_handler(MessageHandler(Filters.text("◀️Orqaga"),start))
 
     # Start the Bot
     updater.start_polling()
